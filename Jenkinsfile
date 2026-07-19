@@ -4,9 +4,10 @@ pipeline {
     stages {
         stage('Build & Tag Docker Image') {
             steps {
-                        sh "docker build -t kavya318506/adservice:latest ."   
+                    sh "docker build -t kavya318506/adservice:latest ."   
             }
         }
+        
         
         stage('Push Docker Image') {
             steps {
